@@ -14,7 +14,10 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         val binding = DataBindingUtil.inflate<FragmentLoginBinding>(
-            inflater, R.layout.fragment_login, container, false
+            inflater,
+            R.layout.fragment_login,
+            container,
+            false
         )
 
         val joinButton = binding.buttonJoin
@@ -31,7 +34,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun navigateToWelcomeFragment() {
-        val navController = findNavController()
-        navController.navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+        val action = LoginFragmentDirections.actionLoginFragmentToWelcomeFragment()
+        findNavController().navigate(action)
     }
 }

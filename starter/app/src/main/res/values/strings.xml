@@ -4,4 +4,10 @@
     <string name="hint_password">Password</string>
     <string name="button_join">Join</string>
     <string name="button_signin">Sign In</string>
+    <string name="welcome">Welcome text</string>
+    <string name="simpleInstruction">Simple instructions text</string>
+    <string name="instructionsButton">See Instructions</string>
+    <string name="shoeListButton">Go to Shoe List</string>
+    <string name="instructionShort">Short instruction</string>
+    <string name="instructionDetail">Detailed instruction</string>
 </resources>

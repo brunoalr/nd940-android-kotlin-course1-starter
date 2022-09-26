@@ -18,6 +18,15 @@
         android:id="@+id/WelcomeFragment"
         android:name="com.udacity.shoestore.WelcomeFragment"
         android:label="Welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_WelcomeFragment_to_InstructionFragment"
+            app:destination="@id/InstructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/InstructionFragment"
+        android:name="com.udacity.shoestore.InstructionFragment"
+        android:label="Instruction"
+        tools:layout="@layout/fragment_instruction" />
 
 </navigation>

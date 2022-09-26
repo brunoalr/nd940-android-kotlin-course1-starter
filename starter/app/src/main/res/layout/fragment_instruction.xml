@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".WelcomeFragment">
+    tools:context=".InstructionFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
         <TextView
-            android:id="@+id/welcomeText"
+            android:id="@+id/instructionShortText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome"
+            android:text="@string/instructionShort"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -22,25 +21,25 @@
             app:layout_constraintVertical_bias="0.25" />
 
         <TextView
-            android:id="@+id/simpleInstructionText"
+            android:id="@+id/instructionDetailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/simpleInstruction"
+            android:text="@string/instructionDetail"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+            app:layout_constraintTop_toBottomOf="@+id/instructionShortText"
             app:layout_constraintVertical_bias="0.25" />
 
         <Button
-            android:id="@+id/instructionsButton"
+            android:id="@+id/shoeListButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/instructionsButton"
+            android:text="@string/shoeListButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/simpleInstructionText"
+            app:layout_constraintTop_toBottomOf="@+id/instructionDetailText"
             app:layout_constraintVertical_bias="0.25" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
