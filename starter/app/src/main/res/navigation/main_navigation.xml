@@ -3,19 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@+id/loginFragment">
+    app:startDestination="@+id/LoginFragment">
 
     <fragment
-        android:id="@+id/loginFragment"
+        android:id="@+id/LoginFragment"
         android:name="com.udacity.shoestore.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
+            android:id="@+id/action_LoginFragment_to_WelcomeFragment"
+            app:destination="@id/WelcomeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/welcomeFragment"
+        android:id="@+id/WelcomeFragment"
         android:name="com.udacity.shoestore.WelcomeFragment"
         android:label="Welcome"
         tools:layout="@layout/fragment_welcome" />
