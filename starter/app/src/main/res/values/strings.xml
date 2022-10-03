@@ -11,4 +11,10 @@
     <string name="instruction_short">Short instruction</string>
     <string name="instruction_detail">Detailed instruction</string>
     <string name="add_shoe_details">Add shoe details</string>
+    <string name="shoeNameText">Name</string>
+    <string name="companyText">Company</string>
+    <string name="shoeSizeText">Size</string>
+    <string name="shoeDescriptionTextView">Description</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="saveButton">Save</string>
 </resources>
