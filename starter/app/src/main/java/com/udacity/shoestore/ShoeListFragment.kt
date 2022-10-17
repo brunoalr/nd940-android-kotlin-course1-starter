@@ -7,11 +7,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.databinding.ShoeLayoutBinding
+import com.udacity.shoestore.models.Shoe
 
 
 class ShoeListFragment : Fragment() {
@@ -29,7 +28,7 @@ class ShoeListFragment : Fragment() {
         )
 
         val shoeDetailButton = binding.shoeDetailButton
-        shoeDetailButton.setOnClickListener{
+        shoeDetailButton.setOnClickListener {
             val action = ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment()
             findNavController().navigate(action)
         }
@@ -39,17 +38,18 @@ class ShoeListFragment : Fragment() {
                 val shoeLayout = DataBindingUtil.inflate<ShoeLayoutBinding>(
                     inflater, R.layout.shoe_layout, container, false
                 )
-                with(shoeLayout) {
-                    shoeName.text = shoe.name
-                    shoeCompany.text = shoe.company
-                    shoeSize.text = shoe.size.toString()
-                    shoeDescription.text = shoe.description
-                }
-
+                shoeLayout.fromShoe(shoe)
                 binding.shoeListLinearLayout.addView(shoeLayout.shoeLinearLayout)
             }
         }
 
         return binding.root
+    }
+
+    private fun ShoeLayoutBinding.fromShoe(shoe: Shoe) {
+        shoeName.text = shoe.name
+        shoeCompany.text = shoe.company
+        shoeSize.text = shoe.size.toString()
+        shoeDescription.text = shoe.description
     }
 }

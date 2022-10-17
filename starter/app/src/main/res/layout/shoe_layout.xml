@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:id="@+id/shoeLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerVertical"
         android:orientation="vertical"
-        android:showDividers="end"
-        android:divider="?android:attr/dividerVertical">
+        android:showDividers="end">
 
         <LinearLayout
             android:layout_width="match_parent"

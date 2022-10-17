@@ -28,22 +28,20 @@ class ShoeDetailFragment : Fragment() {
 
         val saveButton = binding.detailSaveButton
         saveButton.setOnClickListener {
-            val shoe = with(binding) {
-                Shoe(
-                    name = shoeNameEditText.text.toString(),
-                    size = if (shoeSizeEditText.text.toString()
-                            .isNotEmpty()
-                    ) shoeSizeEditText.text.toString().toDouble() else 0.0,
-                    company = companyEditText.text.toString(),
-                    description = shoeDescriptionEditText.text.toString()
-                )
-            }
-            viewModel.addNewShow(shoe)
+            viewModel.addNewShow(binding.toShoe())
             navigateToShoeList()
         }
 
         return binding.root
     }
+
+    private fun FragmentShoeDetailBinding.toShoe() = Shoe(
+        name = shoeNameEditText.text.toString(),
+        size = if (shoeSizeEditText.text.toString().isNotEmpty()) shoeSizeEditText.text.toString()
+            .toDouble() else 0.0,
+        company = companyEditText.text.toString(),
+        description = shoeDescriptionEditText.text.toString()
+    )
 
     private fun navigateToShoeList() {
         val action = ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment()
