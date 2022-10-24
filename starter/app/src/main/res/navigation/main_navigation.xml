@@ -50,5 +50,4 @@
             android:id="@+id/action_ShoeDetailFragment_to_ShoeListFragment"
             app:destination="@id/ShoeListFragment" />
     </fragment>
-
 </navigation>
