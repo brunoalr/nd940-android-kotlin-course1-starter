@@ -24,7 +24,7 @@
                 android:id="@+id/shoeNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/shoeNameText"
+                android:text="@string/shoe_name_text"
                 tools:layout_editor_absoluteX="76dp" />
 
             <EditText
@@ -52,7 +52,7 @@
                 android:id="@+id/companyTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/companyText"
+                android:text="@string/company_text"
                 tools:layout_editor_absoluteX="76dp" />
 
             <EditText
@@ -80,7 +80,7 @@
                 android:id="@+id/shoeSizeTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/shoeSizeText"
+                android:text="@string/shoe_size_text"
                 tools:layout_editor_absoluteX="76dp" />
 
             <EditText
@@ -108,7 +108,7 @@
                 android:id="@+id/shoeDescriptionTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/shoeDescriptionTextView"
+                android:text="@string/shoe_description_text_view"
                 tools:layout_editor_absoluteX="76dp" />
 
             <EditText
@@ -134,14 +134,14 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cancelButton" />
+                android:text="@string/cancel_button" />
 
             <Button
                 android:id="@+id/detailSaveButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/saveButton" />
+                android:text="@string/save_button" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,9 +47,9 @@ class ShoeListFragment : Fragment() {
     }
 
     private fun ShoeLayoutBinding.fromShoe(shoe: Shoe) {
-        shoeName.text = shoe.name
-        shoeCompany.text = shoe.company
-        shoeSize.text = shoe.size.toString()
-        shoeDescription.text = shoe.description
+        shoeName.text = getString(R.string.name_format, shoe.name)
+        shoeCompany.text = getString(R.string.company_format, shoe.company)
+        shoeSize.text = getString(R.string.size_format, shoe.size)
+        shoeDescription.text = getString(R.string.description_format, shoe.description)
     }
 }
