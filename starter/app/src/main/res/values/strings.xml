@@ -4,12 +4,12 @@
     <string name="hint_password">Password</string>
     <string name="button_join">Join</string>
     <string name="button_signin">Sign In</string>
-    <string name="welcome">Welcome text</string>
-    <string name="simple_instruction">Simple instructions text</string>
+    <string name="welcome">Welcome to the ShoeStore app!</string>
+    <string name="simple_instruction">"Click on the '%s' button to learn more"</string>
     <string name="instructions_button">See Instructions</string>
     <string name="shoe_list_button">Go to Shoe List</string>
-    <string name="instruction_short">Short instruction</string>
-    <string name="instruction_detail">Detailed instruction</string>
+    <string name="instruction_short">How to use this app</string>
+    <string name="instruction_detail"><li>Click on the button below to go the Shoe List</li>\n<li>In the Shoe List, click on the \'+\' button to add the details of a new shoe</li>\n<li>Click on the Save Button to add the new shoe</li></string>
     <string name="add_shoe_details">Add shoe details</string>
     <string name="shoe_name_text">Name</string>
     <string name="company_text">Company</string>

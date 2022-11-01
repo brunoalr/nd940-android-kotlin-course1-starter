@@ -33,7 +33,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                tools:layout_editor_absoluteY="19dp" />
+                android:minHeight="48dp"
+                tools:layout_editor_absoluteY="19dp"
+                android:autofillHints="" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,7 +63,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                tools:layout_editor_absoluteY="20dp" />
+                android:minHeight="48dp"
+                tools:layout_editor_absoluteY="20dp"
+                android:autofillHints="" />
         </LinearLayout>
 
         <LinearLayout
@@ -89,7 +93,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                tools:layout_editor_absoluteY="19dp" />
+                android:minHeight="48dp"
+                tools:layout_editor_absoluteY="19dp"
+                android:autofillHints="" />
         </LinearLayout>
 
         <LinearLayout
@@ -117,7 +123,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textLongMessage"
-                tools:layout_editor_absoluteY="19dp" />
+                android:minHeight="48dp"
+                tools:layout_editor_absoluteY="19dp"
+                android:autofillHints="" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,23 +133,27 @@
             style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <Button
                 android:id="@+id/detailCancelButton"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cancel_button" />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:text="@string/cancel_button"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/detailSaveButton"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/save_button" />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:text="@string/save_button"
+                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

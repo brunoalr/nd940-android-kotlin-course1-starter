@@ -17,11 +17,12 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = DataBindingUtil.inflate<FragmentWelcomeBinding>(
-            inflater,
-            R.layout.fragment_welcome,
-            container,
-            false
+            inflater, R.layout.fragment_welcome, container, false
         )
+
+        val simpleInstructionText = binding.simpleInstructionText
+        simpleInstructionText.text =
+            getString(R.string.simple_instruction, getString(R.string.instructions_button))
 
         val instructionsButton = binding.instructionsButton
         instructionsButton.setOnClickListener {
