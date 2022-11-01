@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val navController = this.findNavController(R.id.nav_host_fragment)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
+        appBarConfiguration = AppBarConfiguration(topLevelDestinationIds = setOf(R.id.LoginFragment, R.id.ShoeListFragment))
         NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration)
     }
 

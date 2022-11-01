@@ -30,7 +30,9 @@
         tools:layout="@layout/fragment_instruction">
         <action
             android:id="@+id/action_InstructionFragment_to_ShoeListFragment"
-            app:destination="@id/ShoeListFragment" />
+            app:destination="@id/ShoeListFragment"
+            app:popUpTo="@+id/LoginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/ShoeListFragment"
