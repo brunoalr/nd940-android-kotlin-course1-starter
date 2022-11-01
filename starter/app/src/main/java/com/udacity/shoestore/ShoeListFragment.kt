@@ -54,13 +54,13 @@ class ShoeListFragment : Fragment() {
                 // somehow onNavDestinationSelected always returns false for a menu item and
                 // navController.navigate throws IllegalArgumentException when clicking on the back button
                 // from the app bar
-                try {
+//                try {
                     navController.navigate(menuItem.itemId)
-                } catch (_: IllegalArgumentException) {
-                    // not a very good idea to rely on exceptions for logic, but I couldn't find a better way
-                    // maybe I set up the app bar incorrectly...
-                    return NavigationUI.onNavDestinationSelected(menuItem, navController)
-                }
+//                } catch (_: IllegalArgumentException) {
+//                    // not a very good idea to rely on exceptions for logic, but I couldn't find a better way
+//                    // maybe I set up the app bar incorrectly...
+//                    return NavigationUI.onNavDestinationSelected(menuItem, navController)
+//                }
                 return true
             }
         }, viewLifecycleOwner)
