@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.databinding.ShoeLayoutBinding
 import com.udacity.shoestore.models.Shoe
@@ -51,16 +50,7 @@ class ShoeListFragment : Fragment() {
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 val navController = requireActivity().findNavController(R.id.nav_host_fragment)
-                // somehow onNavDestinationSelected always returns false for a menu item and
-                // navController.navigate throws IllegalArgumentException when clicking on the back button
-                // from the app bar
-//                try {
-                    navController.navigate(menuItem.itemId)
-//                } catch (_: IllegalArgumentException) {
-//                    // not a very good idea to rely on exceptions for logic, but I couldn't find a better way
-//                    // maybe I set up the app bar incorrectly...
-//                    return NavigationUI.onNavDestinationSelected(menuItem, navController)
-//                }
+                navController.navigate(menuItem.itemId)
                 return true
             }
         }, viewLifecycleOwner)
